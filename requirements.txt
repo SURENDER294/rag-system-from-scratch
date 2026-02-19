@@ -1,0 +1,29 @@
+# Core RAG dependencies
+# Python 3.8 compatible
+
+# Vector search
+faiss-cpu>=1.7.4
+
+# Embeddings (OpenAI)
+openai>=1.14.0
+
+# Local embeddings (sentence-transformers fallback)
+sentence-transformers>=2.2.2
+torch>=2.0.0
+
+# Document parsing
+PyMuPDF>=1.23.0        # PDF support  (fitz)
+python-docx>=0.8.11    # .docx support
+markdown>=3.4.3        # Markdown support
+
+# Numerical computing
+numpy>=1.23.5
+
+# Utilities
+tqdm>=4.65.0           # Progress bars during ingestion
+python-dotenv>=1.0.0   # Load OPENAI_API_KEY from .env
+typing-extensions>=4.5.0
+
+# Development / testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
